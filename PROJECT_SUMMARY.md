@@ -116,7 +116,7 @@ crud-dd-task-mean-app/
 └── PROJECT_SUMMARY.md
 ```
 
-## 🔧 Key Features Implemented
+##  Key Features Implemented
 
 1. **Multi-stage Docker builds** for optimized images
 2. **Nginx reverse proxy** for API routing
