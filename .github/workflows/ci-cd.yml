@@ -40,6 +40,11 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
+          sudo apt update
+          sudo apt install -y docker.io docker-compose
+          sudo usermod -aG docker ubuntu
+          sudo mkdir -p /opt/mean-app
           cd /opt/mean-app
-          docker-compose pull
-          docker-compose up -d
+          sudo wget https://raw.githubusercontent.com/Deadends/crud-dd-task-mean-app/main/docker-compose.prod.yml
+          sudo wget https://raw.githubusercontent.com/Deadends/crud-dd-task-mean-app/main/nginx/nginx.conf -P nginx/
+          sudo DOCKER_USERNAME=nantha01 docker-compose -f docker-compose.prod.yml up -d
