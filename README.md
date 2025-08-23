@@ -1,6 +1,6 @@
 # MEAN Stack CRUD Application
 
-A full-stack CRUD application using MongoDB, Express, Angular 15, and Node.js. The application manages tutorials with create, read, update, delete, and search functionality.
+A full-stack CRUD application using MongoDB, Express, Angular 15, and Node.js. The application manages tutorials with create, read, update, delete, and search functionality. Also attached all working images on ss-images folder 
 
 ## Architecture
 
@@ -46,7 +46,7 @@ ng serve --port 8081
 ## Production Deployment
 
 ### Prerequisites
-- Ubuntu VM (AWS/Azure/GCP)
+- Ubuntu VM (Azure)
 - Docker Hub account
 - GitHub repository
 
@@ -176,10 +176,4 @@ docker stats
 - Implement proper authentication in production
 - Use HTTPS with SSL certificates
 
-## Contributing
 
-1. Fork repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
