@@ -24,14 +24,14 @@ jobs:
       with:
         context: ./backend
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/mean-backend:latest
+        tags: nantha01/mean-backend:latest
     
     - name: Build and push frontend image
       uses: docker/build-push-action@v4
       with:
         context: ./frontend
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/mean-frontend:latest
+        tags: nantha01/mean-frontend:latest
     
     - name: Deploy to server
       uses: appleboy/ssh-action@v0.1.5
