@@ -11,21 +11,6 @@ A full-stack CRUD application using MongoDB, Express, Angular 15, and Node.js. T
 - **Containerization**: Docker & Docker Compose
 - **CI/CD**: GitHub Actions
 
-## Quick Start
-
-### Local Development
-
-```bash
-# Clone repository
-git clone <repository-url>
-cd crud-dd-task-mean-app
-
-# Start with Docker Compose
-docker-compose up -d
-
-# Access application
-open http://localhost
-```
 
 ### Manual Setup
 
@@ -46,18 +31,10 @@ ng serve --port 8081
 ## Production Deployment
 
 ### Prerequisites
-- Ubuntu VM (Azure)
+- Ubuntu VM (AWS)
 - Docker Hub account
 - GitHub repository
 
-### 1. VM Setup
-
-```bash
-# Run deployment script
-wget https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/deploy.sh
-chmod +x deploy.sh
-./deploy.sh
-```
 
 ### 2. Manual VM Setup
 
